@@ -1,0 +1,34 @@
+basic:
+  use_multithreading: true  # Set to false to use single-threaded processing
+  thread_nums: 16
+image:
+  input_folder: "./data/input"
+  output_folder: "./data/output"
+  output_quality: 100
+exiftool:
+  path: '/path_to_your_exiftool/exiftool'
+logo:
+  options:
+    NIKON: './resources/logos/nikon.png'
+    Canon: './resources/logos/canon.png'
+    SONY: './resources/logos/sony.png'
+  size: 100
+
+font:
+  path: './resources/fonts/Lato-Bold.ttf'
+  size: 27
+  color: '#000000'  # Black text
+
+text:
+  padding: 20
+  background_color: '#FFFFFF'  # White background for text box
+
+border:
+  height: 50
+  width: 50
+  color: '#FFFFFF'  # White border
+  include_top: true
+  include_bottom: true
+  include_left: true
+  include_right: true
+
