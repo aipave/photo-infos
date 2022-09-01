@@ -76,6 +76,10 @@ Execute the main.py script from the root of the project directory:
 python main.py
 ```
 
+example outout: 
+
+![e.g.car](./data/output/EXIF_DSC_2838.JPG)
+
 ## Contributions and Issues
 
 Contributions are welcome via pull requests. Please file issues via GitHub's issue tracker if you encounter any problems.
