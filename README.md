@@ -35,7 +35,9 @@ The configuration file (`config.yaml`) specifies paths and settings used by the 
   - `output_quality`: Quality of the output images.
 
 - **Exiftool Path:**
-  - `path`: Path to the `exiftool` executable.
+  - `path`: Path to the `exiftool` executable. 
+    - download from: https://www.exiftool.org/
+    - e.g. `tar -xzvf Image-ExifTool-xx.xx.tar.gz`
 
 - **Logo Settings:**
   - `options`: Dictionary mapping camera brands to their respective logo files.
@@ -81,7 +83,3 @@ Contributions are welcome via pull requests. Please file issues via GitHub's iss
 ## Star Growth Chart
 
 The following chart shows the growth in stars over time for our project.
-
-![Star Growth Chart](https://user-images.githubusercontent.com/yourimageurl.png)
-
-

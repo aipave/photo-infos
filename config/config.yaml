@@ -6,7 +6,7 @@ image:
   output_folder: "./data/output"
   output_quality: 100
 exiftool:
-  path: '/path_to_your_exiftool/exiftool'
+  path: '/path_to_your_exiftool/exiftool' # https://www.exiftool.org/
 logo:
   options:
     NIKON: './resources/logos/nikon.png'
