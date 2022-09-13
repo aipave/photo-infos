@@ -16,8 +16,10 @@ def add_exif_info_to_image(image_path, output_path, config):
     if not exif_data:
         print("No EXIF data found")
         return
+
+    logo_size = int(min(img.width, img.height) * config['basic']['logo_size_rate']) if config['basic']['size_rate_priority'] else config['logo']['size']
     logo_path = get_logo_path(exif_data['camera_model'], config['logo']['options'])
-    logo = load_logo(logo_path, config['logo']['size'])
+    logo = load_logo(logo_path, logo_size)
 
     info_text = format_info_text(
         exif_data['camera_model'],

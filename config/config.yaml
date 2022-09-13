@@ -1,6 +1,10 @@
 basic:
   use_multithreading: true  # Set to false to use single-threaded processing
   thread_nums: 16
+  size_rate_priority: true
+  logo_size_rate: 0.1
+  font_size_rate: 0.03
+  border_size_rate: 0.05
 image:
   input_folder: "./data/input"
   output_folder: "./data/output"
@@ -9,9 +13,12 @@ exiftool:
   path: '/path_to_your_exiftool/exiftool' # https://www.exiftool.org/
 logo:
   options:
+    Default: './resources/logos/default.png'
     NIKON: './resources/logos/nikon.png'
     Canon: './resources/logos/canon.png'
     SONY: './resources/logos/sony.png'
+    ILCE: './resources/logos/sony.png'
+  padding: 0
   size: 100
 
 font:
