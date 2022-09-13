@@ -6,7 +6,7 @@ def get_logo_path(camera_model, logo_config):
     for brand, path in logo_config.items():
         if brand.lower() in camera_model:
             return path
-    return None
+    return logo_config['Default']
 
 def load_logo(logo_path, logo_size):
     if logo_path is None or not os.path.exists(logo_path):
