@@ -5,12 +5,15 @@ basic:
   logo_size_rate: 0.1
   font_size_rate: 0.03
   border_size_rate: 0.05
+  logo_padding_size_rate: 0
+  text_padding_size_rate: 0.03
 image:
   input_folder: "./data/input"
   output_folder: "./data/output"
   output_quality: 100
 exiftool:
-  path: '/path_to_your_exiftool/exiftool' # https://www.exiftool.org/
+  path: '/mnt/e/Working2/scan_code2.0/A1-photograph/semi-utils/exiftool/exiftool'
+  #path: '/path_to_your_exiftool/exiftool' # https://www.exiftool.org/
 logo:
   options:
     Default: './resources/logos/default.png'
@@ -27,7 +30,7 @@ font:
   color: '#000000'  # Black text
 
 text:
-  padding: 20
+  padding: 0
   background_color: '#FFFFFF'  # White background for text box
 
 border:

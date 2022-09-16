@@ -21,7 +21,11 @@ def draw_text_and_logo(img, info_text, logo, config):
 
     if config['basic']['size_rate_priority']:
         # Calculate dynamic sizes based on the image dimensions
+        logo_padding = int(min(img.width, img.height) * config['basic']['logo_padding_size_rate'])
+        text_padding = int(min(img.width, img.height) * config['basic']['text_padding_size_rate'])
+
         font_size = int(min(img.width, img.height) * config['basic']['font_size_rate'])
+
         border_height = int(min(img.width, img.height) * config['basic']['border_size_rate'])
         border_width = int(min(img.width, img.height) * config['basic']['border_size_rate'])
 
